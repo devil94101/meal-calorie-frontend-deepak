@@ -30,8 +30,8 @@ A modern web application for tracking meals and calories, built with Next.js, Ty
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/meal-calorie-frontend.git
-   cd meal-calorie-frontend
+   git clone https://github.com/devil94101/meal-calorie-frontend-deepak.git
+   cd meal-calorie-frontend-deepak
    ```
 
 2. Install dependencies:
@@ -39,7 +39,7 @@ A modern web application for tracking meals and calories, built with Next.js, Ty
    npm install
    ```
 
-3. Create a `.env.local` file based on `.env.example`:
+3. Create a `.env` file based on `.env.example`:
    ```bash
    cp .env.example .env.local
    ```
@@ -108,8 +108,6 @@ docker-compose down
 
 ### 5. API Integration
 - **Choice**: USDA FoodData Central API
-- **Reason**: Comprehensive food database
-- **Trade-off**: Rate limits, occasional latency
 
 ### 6. Containerization
 - **Choice**: Docker with docker-compose
@@ -120,12 +118,15 @@ docker-compose down
 
 ### Dashboard
 ![Dashboard View](public/screenshots/dashboard.png)
+![Dashboard View](public/screenshots/dashboard-dark.png)
 
 ### Meal History
-![Meal History](public/screenshots/history.png)
+![Meal History](public/screenshots/meal.png)
+![Meal History](public/screenshots/meal-dark.png)
 
 ### Add Meal
 ![Add Meal](public/screenshots/add-meal.png)
+![Add Meal](public/screenshots/add-meal-api.png)
 
 ## Environment Variables
 

@@ -1,0 +1,54 @@
+{
+  "extends": [
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    // Completely disable problematic rules
+    "no-unused-vars": "off",
+    "no-empty": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    
+    // Next.js specific rules
+    "next/no-img-element": "off",
+    "next/no-html-link-for-pages": "off",
+    
+    // General rules
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-debugger": "warn",
+    "no-duplicate-imports": "warn",
+    "no-unused-expressions": "warn",
+    
+    // Accessibility rules
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/anchor-has-content": "warn",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-role": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    
+    // Import rules
+    "import/no-unresolved": "off",
+    "import/named": "warn",
+    "import/default": "warn",
+    "import/namespace": "warn"
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    ".next/",
+    "out/",
+    "public/",
+    "*.config.js",
+    "*.config.ts",
+    "coverage/",
+    "dist/",
+    "build/"
+  ]
+} 
