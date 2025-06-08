@@ -1,28 +1,28 @@
-"use client";
+"use client"
 
-import { useAuthStore } from "@/lib/store/auth-store";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useAuthStore } from "@/lib/store/auth-store"
+import { useRouter } from "next/navigation"
+import { useEffect } from "react"
 
 export default function Home() {
-  const { isAuthenticated, isLoading, checkAuth } = useAuthStore();
-  const router = useRouter();
+  const { isAuthenticated, isLoading, checkAuth } = useAuthStore()
+  const router = useRouter()
+
+  useEffect(() =>{
+    checkAuth()
+  },[checkAuth])
 
   useEffect(() => {
-    checkAuth();
-  }, [checkAuth]);
-
-  useEffect(() => {
-    console.log({ isLoading, isAuthenticated });
+    console.log({isLoading,isAuthenticated})
     if (!isLoading) {
       if (isAuthenticated) {
-        router.push("/dashboard");
+        router.push("/dashboard")
       } else {
-        router.push("/auth/signin");
+        router.push("/auth/signin")
       }
     }
-  }, [isAuthenticated, isLoading, router]);
+  }, [isAuthenticated, isLoading, router])
 
   // The loading state is now handled by the AuthInitializer in providers
-  return null;
+  return null
 }

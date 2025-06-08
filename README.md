@@ -2,6 +2,8 @@
 
 A modern web application to track your daily meals and calories.
 
+[Live Demo](https://meal-calorie-frontend-deepak-8ir4-kltvw5ff3.vercel.app/)
+
 ## Tech Stack
 
 - **Frontend Framework**: Next.js 13+ with App Router
